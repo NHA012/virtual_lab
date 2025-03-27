@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BTL Kotlin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="man_hinh_chinh_title">MÀN HÌNH CHÍNH</string>
+    <string name="dang_nhap">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="ma_so_ca_nhan">Mã số cá nhân</string>
+    <string name="info">Info</string>
+    <string name="practice">Practice</string>
+    <string name="_3dot">...</string>
+</resources>
