@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:title="@string/man_hinh_chinh_title"
+        android:id="@+id/go_back"
+        android:title="@string/back"
         />
 
 </menu>

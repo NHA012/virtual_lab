@@ -9,5 +9,10 @@
     <string name="ma_so_ca_nhan">Mã số cá nhân</string>
     <string name="info">Info</string>
     <string name="practice">Practice</string>
-    <string name="_3dot">...</string>
+    <string name="_3dot">…</string>
+    <string name="back">\u003c\u003c</string>
+    <string name="iphoneX">Iphone X</string>
+    <string name="model1">Model 1</string>
+    <string name="model2">Model 2</string>
+    <string name="chgAnim">Chg anim</string>
 </resources>

@@ -13,4 +13,17 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="BottomNavigationText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20sp</item> <!-- Adjust size as needed -->
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:textSize">20sp</item> <!-- This might not work alone -->
+        <item name="itemTextAppearanceActive">@style/BottomNavigationText</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
 </resources>
