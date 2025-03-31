@@ -57,4 +57,8 @@ dependencies {
     implementation(libs.androidx.camera.camera.lifecycle)
     implementation(libs.androidx.camera.camera.view)
     implementation(libs.mlkit.barcode.scanning)
+
+    implementation ("com.google.ar.sceneform.ux:sceneform-ux:1.17.1")
+    implementation ("com.google.ar.sceneform:core:1.17.1")
+    implementation("com.google.ar.sceneform:plugin:1.17.1")
 }
