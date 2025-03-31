@@ -5,17 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primary_blue"
-        android:padding="16dp"
-        android:text="Chức năng chính"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- TextView with ID tvTitle has been removed -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,10 +13,10 @@
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+        app:layout_constraintTop_toTopOf="parent"> <!-- Changed from toBottomOf="@id/tvTitle" to toTopOf="parent" -->
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFaceRecognition"
+            android:id="@+id/cardObjectRecognition"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="16dp"
@@ -43,9 +33,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:contentDescription="Face Recognition"
+                    android:contentDescription="Object"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/face_recognition_icon" />
+                    android:src="@drawable/object_recognition_icon" />
 
                 <TextView
                     android:layout_width="match_parent"
