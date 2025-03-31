@@ -246,6 +246,7 @@
 
         <!-- Bottom Bar with Text -->
         <TextView
+            android:id="@+id/tvMainScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#0D47A1"
@@ -273,7 +274,7 @@
         android:backgroundTint="#0D47A1"
         android:gravity="center"
         android:padding="12dp"
-        android:text="U+25C0   Đang quét"
+        android:text="&lt;&lt;   Đang quét"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"

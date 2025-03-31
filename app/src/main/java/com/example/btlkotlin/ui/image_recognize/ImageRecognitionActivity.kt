@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.net.Uri
 import android.provider.Settings
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.camera.view.PreviewView
 import androidx.cardview.widget.CardView
@@ -25,7 +26,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import com.google.android.material.button.MaterialButton
 import androidx.camera.core.ImageAnalysis
-
+import com.example.btlkotlin.MainActivity
 
 
 class ImageRecognitionActivity : AppCompatActivity() {
@@ -69,6 +70,13 @@ class ImageRecognitionActivity : AppCompatActivity() {
         }
         // Initialize camera executor
         cameraExecutor = Executors.newSingleThreadExecutor()
+
+        val tvMainScreen = findViewById<TextView>(R.id.tvMainScreen)
+        tvMainScreen.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun checkCameraPermissionAndOpenCamera() {
