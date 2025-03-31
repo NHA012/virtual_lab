@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import com.example.btlkotlin.ui.face_recognize.ObjectRecognitionActivity
+import com.example.btlkotlin.ui.object_recognize.ObjectRecognitionActivity
 import com.example.btlkotlin.ui.image_recognize.ImageRecognitionActivity
 
 class MainActivity : AppCompatActivity() {

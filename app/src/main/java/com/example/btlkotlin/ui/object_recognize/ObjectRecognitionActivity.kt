@@ -1,4 +1,4 @@
-package com.example.btlkotlin.ui.face_recognize
+package com.example.btlkotlin.ui.object_recognize
 
 import androidx.appcompat.app.AppCompatActivity
 

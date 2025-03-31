@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".ui.face_recognize.ObjectRecognitionActivity"/>
+        <activity android:name=".ui.object_recognize.ObjectRecognitionActivity"/>
         <activity android:name=".ui.image_recognize.ImageRecognitionActivity"/>
     </application>
 
