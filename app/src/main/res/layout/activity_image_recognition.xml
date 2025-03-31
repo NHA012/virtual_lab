@@ -252,7 +252,7 @@
             android:background="#0D47A1"
             android:gravity="center"
             android:padding="12dp"
-            android:text="MÀN HÌNH CHÍNH"
+            android:text="&lt;&lt;   MÀN HÌNH CHÍNH"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -274,7 +274,7 @@
         android:backgroundTint="#0D47A1"
         android:gravity="center"
         android:padding="12dp"
-        android:text="&lt;&lt;   Đang quét"
+        android:text="&lt;&lt;   ĐANG QUÉT"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
