@@ -1,35 +1,33 @@
 package com.example.btlkotlin
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.btlkotlin.databinding.ActivityMainBinding
+import androidx.cardview.widget.CardView
+import com.example.btlkotlin.ui.face_recognize.FaceRecognitionActivity
+import com.example.btlkotlin.ui.image_recognize.ImageRecognitionActivity
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var cardFaceRecognition: CardView
+    private lateinit var cardImageRecognition: CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        // Initialize views
+        cardFaceRecognition = findViewById(R.id.cardFaceRecognition)
+        cardImageRecognition = findViewById(R.id.cardImageRecognition)
 
-        val navView: BottomNavigationView = binding.navView
+        // Set click listeners
+        cardFaceRecognition.setOnClickListener {
+            val intent = Intent(this, FaceRecognitionActivity::class.java)
+            startActivity(intent)
+        }
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        cardImageRecognition.setOnClickListener {
+            val intent = Intent(this, ImageRecognitionActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
