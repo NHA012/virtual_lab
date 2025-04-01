@@ -25,6 +25,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            ndk {
+                debugSymbolLevel = "FULL"  // Keep full symbols in debug builds
+            }
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -58,8 +63,8 @@ dependencies {
     implementation(libs.androidx.camera.camera.view)
     implementation(libs.mlkit.barcode.scanning)
 
-    implementation ("com.google.android.filament:filament-android:1.41.0")
-    implementation ("com.google.android.filament:gltfio-android:1.41.0")
-    implementation ("com.google.android.filament:filament-utils-android:1.41.0")
+    implementation ("com.google.ar.sceneform.ux:sceneform-ux:1.17.1")
+    implementation ("com.google.ar.sceneform:core:1.17.1")
+    implementation("com.google.ar.sceneform:plugin:1.17.1")
 
 }
