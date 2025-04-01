@@ -8,18 +8,6 @@
 
     <!-- Left Joystick for Movement-->
 
-    <fragment
-        android:id="@+id/ux_fragment"
-        android:name="com.google.ar.sceneform.ux.ArFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/joystick_layout"
         android:layout_width="120dp"
