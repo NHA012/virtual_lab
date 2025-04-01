@@ -63,8 +63,12 @@ dependencies {
     implementation(libs.androidx.camera.camera.view)
     implementation(libs.mlkit.barcode.scanning)
 
-    implementation ("com.google.ar.sceneform.ux:sceneform-ux:1.17.1")
-    implementation ("com.google.ar.sceneform:core:1.17.1")
-    implementation("com.google.ar.sceneform:plugin:1.17.1")
+    implementation ("com.google.android.filament:filament-android:1.41.0")
+    implementation ("com.google.android.filament:gltfio-android:1.41.0")
+    implementation ("com.google.android.filament:filament-utils-android:1.41.0")
 
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
 }

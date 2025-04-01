@@ -6,30 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".ui.image_recognize.ImageRecognitionActivity">
 
-    <!-- Left Joystick for Movement-->
+    <TextView
+        android:id="@+id/user_hint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="https://google.github.io/filament/remote"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <!-- Screen to display 3D model -->
 
+    <SurfaceView
+        android:id="@+id/main_sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!-- Left Joystick for Movement-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/joystick_layout"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="120dp"
         android:layout_margin="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <fragment
-            android:id="@+id/ux_fragment"
-            android:name="com.google.ar.sceneform.ux.ArFragment"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-
-        <!-- Left Joystick for Movement-->
 
         <ImageView
             android:id="@+id/joystick_outer"
@@ -37,8 +46,10 @@
             android:layout_height="match_parent"
             android:scaleType="fitCenter"
             android:src="@drawable/joystick_outer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/joystick_inner"
@@ -78,9 +89,10 @@
         android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/zoom_slider"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <!-- Mat phang Button -->
         <androidx.cardview.widget.CardView
@@ -211,72 +223,32 @@
                 android:padding="8dp">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnDienDi"
+                    android:id="@+id/btn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="#EFEFEF"
-                    android:text="Điện Di"
+                    android:text="Iphone X"
                     android:textColor="#000000"
                     app:cornerRadius="50dp" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMayVortex"
+                    android:id="@+id/btn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="#EFEFEF"
-                    android:text="Máy Vortex"
+                    android:text="Iphone 8"
                     android:textColor="#000000"
                     app:cornerRadius="50dp" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMayKhuayTu"
+                    android:id="@+id/btn3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="#EFEFEF"
-                    android:text="Máy Khuấy Từ"
-                    android:textColor="#000000"
-                    app:cornerRadius="50dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnCanKyThuat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:backgroundTint="#EFEFEF"
-                    android:text="Cân Kỹ Thuật"
-                    android:textColor="#000000"
-                    app:cornerRadius="50dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnTuThaoTac1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:backgroundTint="#EFEFEF"
-                    android:text="Tủ thao tác"
-                    android:textColor="#000000"
-                    app:cornerRadius="50dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnTuThaoTac2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:backgroundTint="#EFEFEF"
-                    android:text="Tủ thao tác"
-                    android:textColor="#000000"
-                    app:cornerRadius="50dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnTuThaoTac3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:backgroundTint="#EFEFEF"
-                    android:text="Tủ thao tác"
+                    android:text="Xe lửa"
                     android:textColor="#000000"
                     app:cornerRadius="50dp" />
             </LinearLayout>
