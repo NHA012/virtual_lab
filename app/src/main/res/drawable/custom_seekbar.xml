@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Track -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="10dp"/>
+            <corners android:radius="5dp"/>
+            <solid android:color="#D3D3D3"/>  <!-- Light Gray -->
+        </shape>
+    </item>
+
+    <!-- Progress Track -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="10dp"/>
+                <corners android:radius="5dp"/>
+                <solid android:color="#FFA500"/>  <!-- Orange -->
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Secondary Progress (optional) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="10dp"/>
+                <corners android:radius="5dp"/>
+                <solid android:color="#FFD700"/>  <!-- Gold -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

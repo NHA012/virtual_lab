@@ -25,6 +25,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            ndk {
+                debugSymbolLevel = "FULL"  // Keep full symbols in debug builds
+            }
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -57,4 +62,13 @@ dependencies {
     implementation(libs.androidx.camera.camera.lifecycle)
     implementation(libs.androidx.camera.camera.view)
     implementation(libs.mlkit.barcode.scanning)
+
+    implementation ("com.google.android.filament:filament-android:1.41.0")
+    implementation ("com.google.android.filament:gltfio-android:1.41.0")
+    implementation ("com.google.android.filament:filament-utils-android:1.41.0")
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
 }

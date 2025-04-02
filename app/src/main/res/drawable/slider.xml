@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer Circle (Background of Thumb) -->
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="50dp"
+                android:height="50dp" />
+            <solid android:color="#A1CAFF"/> <!-- Light Blue -->
+            <stroke
+                android:width="2dp"
+                android:color="#007AFF"/> <!-- Darker Blue Outline -->
+        </shape>
+    </item>
+
+    <!-- Inner Circle -->
+    <item android:width="30dp" android:height="30dp" android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="#007AFF"/> <!-- Solid Blue Inner Circle -->
+        </shape>
+    </item>
+
+</layer-list>
